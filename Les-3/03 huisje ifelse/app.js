@@ -42,16 +42,22 @@ class App
         g.closePath()
         
         g.beginPath()
-        // g.moveTo(400, 450)
+        g.moveTo(300, 350)
         g.lineTo(500, 400);
         g.lineTo(500, 550);
         g.lineTo(300, 500);
         g.lineTo(300, 350);
-
-        g.fillStyle = "white";
+        let random = Math.ceil(Math.random() * 2);
+        console.log(random)
+        if(random > 1) {
+            g.fillStyle = "yellow";
+        } else {
+            g.fillStyle = "grey";
+        }
         g.stroke()
         g.fill()
         g.closePath()
+
         console.log(canvas)
         
     }
