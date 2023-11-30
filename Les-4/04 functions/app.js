@@ -1,8 +1,5 @@
-function argumentAreHandy(shoutout) {
-    console.log("Do you want to give a shoutout?")
-    
-    console.log(shoutout)
-}
-
-argumentAreHandy("Super Shout out");
-argumentAreHandy("Ik ben milan");
+let u = 9;
+let h = 8;
+let l = 15;
+let logY = Math.log(l) + h + Math.pow(u,2);
+console.log(logY)
