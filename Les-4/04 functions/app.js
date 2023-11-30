@@ -1,11 +1,8 @@
-function SuperMooieGlobalFunction()
-{
-    console.log("Ik ben global");
-    console.log("Dus je mag mij overal aanroepen");
+function argumentAreHandy(shoutout) {
+    console.log("Do you want to give a shoutout?")
+    
+    console.log(shoutout)
 }
 
-
-SuperMooieGlobalFunction();
-superMooieGlobalFunction();
-superMooieGlobalFunction();
-superMooieGlobalFunction();
+argumentAreHandy("Super Shout out");
+argumentAreHandy("Ik ben milan");
