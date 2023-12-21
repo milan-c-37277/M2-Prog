@@ -3,43 +3,21 @@ class App
     runApplication()
     {
         console.log("hello world!");
+        let dino = new Dino("T-Rex",true,20);;
+        console.log("De naam van deze " + dino.name + " is: " + dino.leeftijd);
+        console.log("en deze " + dino.name + " eet vlees " + dino.meateter)
     }
 }
 
-class Greet
+class Dino
 {
-    constructor()
+    constructor(naam, age, vleeseter)
     {
-        this.greeting = "Greetings!"
-    }
-    
-    showGreeting()
-    {
-        console.log("greeting van binnen: " + this.greeting)
+        this.name = naam;
+        this.leeftijd = age;
+        this.meateter = vleeseter;
     }
 }
-
-class GoodBye
-{
-    constructor()
-    {
-        this.bye = "Bye Bye Bye!"
-    }
-
-    showBye()
-    {
-        console.log("greeting van binnen: " + this.bye)
-    }
-}
-
-
-
-let greet = new Greet();
-let bye = new GoodBye();
-
-console.log("greeting van buiten: " + greet.greeting)
-console.log("goodbye van buiten: " + bye.bye)
-
 
 let app = new App();
 app.runApplication();
