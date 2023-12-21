@@ -7,6 +7,7 @@ class App
         {
             console.log("Click!")
         })
+    }
 }
 
 let app = new App();
