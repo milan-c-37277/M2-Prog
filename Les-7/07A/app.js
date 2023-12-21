@@ -10,39 +10,36 @@ class Greet
 {
     constructor()
     {
+        this.greeting = "Greetings!"
     }
-
+    
     showGreeting()
     {
-        console.log("Greetings!");
-    }   
+        console.log("greeting van binnen: " + this.greeting)
+    }
 }
 
 class GoodBye
 {
     constructor()
     {
-
+        this.bye = "Bye Bye Bye!"
     }
 
     showBye()
     {
-        console.log("Bye Bye!");
+        console.log("greeting van binnen: " + this.bye)
     }
 }
 
 
-let app = new App();
+
 let greet = new Greet();
-greet.showGreeting();
 let bye = new GoodBye();
-bye.showBye();
-greet.showGreeting();
-bye.showBye();
-greet.showGreeting();
-bye.showBye();
-greet.showGreeting();
-bye.showBye();
+
+console.log("greeting van buiten: " + greet.greeting)
+console.log("goodbye van buiten: " + bye.bye)
 
 
+let app = new App();
 app.runApplication();
