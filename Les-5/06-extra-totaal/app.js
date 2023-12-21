@@ -10,7 +10,7 @@ class App
         items.push(['boom', 'green', 1.1])
         items.push(['huis', 'red', 1.9])
         items.push(['boom', 'green', 3.2])
-        items.push(['boom', 'purple', 4.9])
+        items.push(['boom', 'purple', 2])
 
         items.splice(2,1)
         console.log(items)
