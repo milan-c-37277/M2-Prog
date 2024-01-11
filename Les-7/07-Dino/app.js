@@ -3,7 +3,11 @@ class App
     runApplication()
     {
         let dino = new Dino("T-Rex",20,true,"Nederland",500,);
-        let plantDino = new Dino("Triceratops",23,false,"Duitsland",300,);
+        let plantDino = new Dino("Triceratops",23,false,"Duitsland",300);
+        let gras = new plant("gras", true);
+        let struik = new plant("struik", true);
+        console.log(gras)
+        console.log(struik)
         console.log(dino);
         console.log(plantDino);
 
@@ -32,8 +36,18 @@ class Dino
     {
         foodToEat.leeft = false;
         this.honger = false;
-        console.log("Ik ben een " + this.naam)
+        console.log("Ik ben een " + this.name)
         console.log("Mijn honger " + this.honger)
+        console.log("Ik eet nu " + foodToEat.name)
+    }
+}
+
+class plant
+{
+    constructor(naam, leeft)
+    {
+        this.name = naam;
+        this.alive = leeft;
     }
 }
 
